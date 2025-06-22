@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Specials Text</title>
+    <style>
+        body {
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        .neon-text {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 72px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 
+                0 0 10px currentColor,
+                0 0 20px currentColor,
+                0 0 30px currentColor;
+            position: relative;
+            animation: colorChange 1s infinite alternate;
+        }
+        
+        @keyframes colorChange {
+            0% {
+                color: white;
+                text-shadow: 
+                    0 0 10px #ff0000,
+                    0 0 20px #ff0000,
+                    0 0 30px #ff0000,
+                    0 0 40px #ff0000;
+            }
+            100% {
+                color: white;
+                text-shadow: 
+                    0 0 10px #0066ff,
+                    0 0 20px #0066ff,
+                    0 0 30px #0066ff,
+                    0 0 40px #0066ff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="neon-text">Specials</div>
+</body>
+</html>
